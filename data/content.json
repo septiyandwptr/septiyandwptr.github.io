@@ -1,0 +1,738 @@
+{
+ "_readme": "Semua teks & data website ada di file ini. Teks dwibahasa memakai {\"id\": \"...\", \"en\": \"...\"}. Edit lalu simpan; tidak perlu mengubah HTML/CSS. Lihat README.md.",
+ "meta": {
+  "name": "Septiyan Dwi Putra",
+  "titleSuffix": " — Septiyan Dwi Putra",
+  "email": "septiyan.dwptr@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/septiyan-dwi-putra-03147445",
+  "cvFile": "assets/docs/Septiyan_Dwi_Putra_-_CV.pdf",
+  "cvName": "Septiyan_Dwi_Putra_-_CV.pdf"
+ },
+ "pageTitles": {
+  "home": {
+   "id": "Beranda",
+   "en": "Home"
+  },
+  "projects": {
+   "id": "Proyek",
+   "en": "Projects"
+  },
+  "about": {
+   "id": "Tentang",
+   "en": "About"
+  },
+  "contact": {
+   "id": "Kontak",
+   "en": "Contact"
+  }
+ },
+ "career": [
+  {
+   "initial": "S",
+   "name": "Synovate (IPSOS)",
+   "years": 1.5
+  },
+  {
+   "initial": "P",
+   "name": "Primera (GfK)",
+   "years": 3.2
+  },
+  {
+   "initial": "Y",
+   "name": "YouGov",
+   "years": 9.3
+  },
+  {
+   "initial": "B",
+   "name": "Balance",
+   "years": 1.8
+  }
+ ],
+ "experience": [
+  {
+   "tab": {
+    "label": {
+     "id": "Saat ini",
+     "en": "Current"
+    }
+   },
+   "company": "PT Balance Business Technology",
+   "role": "Product Research",
+   "period": {
+    "id": "Jan 2025 – Sekarang",
+    "en": "Jan 2025 – Present"
+   },
+   "desc": {
+    "id": "Meneliti produk rumah tangga stainless steel dan alas kaki, mengubah masukan pelanggan dan wawasan pasar menjadi perbaikan produk, mendukung strategi pemasaran, serta konten video pemasaran berbantuan AI.",
+    "en": "Researching stainless-steel household products and footwear, converting customer feedback and market insights into product improvements, supporting marketing strategy, and AI-assisted marketing video content."
+   }
+  },
+  {
+   "tab": {
+    "name": "YouGov",
+    "dates": {
+     "id": "Mei 2015 – Agu 2024",
+     "en": "May 2015 – Aug 2024"
+    }
+   },
+   "company": "PT YouGov Consulting Indonesia",
+   "role": "Senior Data Processing &amp; Product Research Executive",
+   "period": {
+    "id": "Mei 2015 – Agu 2024",
+    "en": "May 2015 – Aug 2024"
+   },
+   "desc": {
+    "id": "Mengotomatiskan pemantauan data survei dengan SQL, Python, dan makro Excel; merancang survei; mengelola dataset Ratings global; desk research untuk pasar baru; mengoptimalkan keterlibatan panelis dan poin insentif.",
+    "en": "Automated survey data monitoring with SQL, Python, and Excel macros; designed surveys; managed global Ratings datasets; desk research for new markets; optimized panellist engagement and incentive points."
+   }
+  },
+  {
+   "tab": {
+    "name": "Primera / GfK",
+    "dates": {
+     "id": "Apr 2012 – Mei 2015",
+     "en": "Apr 2012 – May 2015"
+    }
+   },
+   "company": {
+    "id": "PT Primera Indonesia (kini PT GfK Retail and Technology)",
+    "en": "PT Primera Indonesia (now PT GfK Retail and Technology)"
+   },
+   "role": "Data Processing Executive",
+   "period": {
+    "id": "Apr 2012 – Mei 2015",
+    "en": "Apr 2012 – May 2015"
+   },
+   "desc": {
+    "id": "Mengelola alur pemrosesan data end-to-end dengan sistem scripting, membuat simulator harga otomatis dengan makro Excel, mendukung infrastruktur IT, dan menyiapkan Focus Vision untuk FGD.",
+    "en": "Managed end-to-end data processing pipelines with scripting systems, built automated pricing simulators with Excel macros, supported IT infrastructure, and set up Focus Vision for FGDs."
+   }
+  },
+  {
+   "tab": {
+    "name": "Synovate",
+    "dates": {
+     "id": "Okt 2010 – Mar 2012",
+     "en": "Oct 2010 – Mar 2012"
+    }
+   },
+   "company": {
+    "id": "PT Synovate (kini IPSOS)",
+    "en": "PT Synovate (now IPSOS)"
+   },
+   "role": "Assistant Data Processing",
+   "period": {
+    "id": "Okt 2010 – Mar 2012",
+    "en": "Oct 2010 – Mar 2012"
+   },
+   "desc": {
+    "id": "Memproses dan menganalisis data untuk berbagai format riset dengan standar kualitas data yang ketat sepanjang siklus proyek.",
+    "en": "Processed and analysed data for various research formats while maintaining strict data quality standards throughout the project lifecycle."
+   }
+  },
+  {
+   "tab": {
+    "name": "Unique",
+    "dates": {
+     "id": "Jul 2010 – Okt 2010",
+     "en": "Jul 2010 – Oct 2010"
+    }
+   },
+   "company": "Unique",
+   "role": {
+    "id": "IT Staff (magang)",
+    "en": "IT Staff (internship)"
+   },
+   "period": {
+    "id": "Jul 2010 – Okt 2010",
+    "en": "Jul 2010 – Oct 2010"
+   },
+   "desc": {
+    "id": "Menyiapkan perangkat baru untuk staf serta memelihara server file dan jaringan.",
+    "en": "Set up new devices for staff and maintained the file server and network."
+   }
+  }
+ ],
+ "story": [
+  {
+   "label": {
+    "id": "Perjalanan",
+    "en": "Journey"
+   },
+   "text": {
+    "id": "Saya Septiyan Dwi Putra, profesional data dan riset pasar dengan pengalaman lebih dari 14 tahun di riset pasar dan lebih dari 10 tahun di pekerjaan terkait survei, termasuk pemrograman, pemeliharaan produk, dan manajemen panel. Saya membangun fondasi teknis yang kuat di pemrosesan data, pemrograman riset, kualitas data, dan otomasi, serta berpengalaman mendukung tim global.",
+    "en": "I'm Septiyan Dwi Putra, a data and market research professional with 14+ years of experience in market research and 10+ years in survey-related work, including programming, product maintenance, and panel management. I've built a strong technical foundation in data processing, research programming, data quality, and automation, and have experience supporting global teams."
+   }
+  },
+  {
+   "label": {
+    "id": "Latar belakang",
+    "en": "Background"
+   },
+   "text": {
+    "id": "Saya mulai dari sisi teknis: kuliah Management Informatics di Politeknik LP3I Jakarta jadi fondasinya, dan sejak itu SQL, Python, R, serta makro Excel jadi peralatan sehari-hari. Urusan infrastruktur IT, dari jaringan sampai setup perangkat, juga biasa saya tangani sendiri. Sekitar sembilan tahun bekerja bareng tim global membuat saya terbiasa beradaptasi cepat, berkomunikasi dengan lugas, dan bekerja lintas budaya tanpa drama.",
+    "en": "I started on the technical side: Management Informatics at Politeknik LP3I Jakarta set the foundation, and SQL, Python, R, and Excel macros have been my daily toolkit ever since. I'm happy getting hands-on with IT infrastructure too, from networks to device setups. After about nine years working with global teams, I've learned to adapt fast, keep communication simple, and make cross-cultural teamwork feel easy."
+   },
+   "languages": {
+    "label": {
+     "id": "Bahasa",
+     "en": "Languages"
+    },
+    "items": [
+     {
+      "id": "Bahasa Indonesia – Native",
+      "en": "Indonesian – Native"
+     },
+     {
+      "id": "English – Profesional",
+      "en": "English – Professional"
+     }
+    ]
+   }
+  },
+  {
+   "label": {
+    "id": "Passion",
+    "en": "Passions"
+   },
+   "text": {
+    "id": "Di luar spreadsheet, saya paling betah di dekat tanaman. Melihat sesuatu yang kecil tumbuh pelan-pelan itu menenangkan, dan berkebun jadi cara saya menarik napas. Lari adalah bab yang lebih baru: saya mengawalinya lewat 5K di UNPAK Race 2025, dan sejak itu mulai ketagihan sensasi setelah selesai lari. Musik hampir selalu menemani, entah saat kerja, lari, atau sekadar melamun. Kalau akhir pekan senggang, saya bawa bekal buat piknik dan cari spot teduh untuk melambat sebentar.",
+    "en": "Away from spreadsheets, I'm happiest around plants. Watching something small grow at its own pace is calming, and gardening is my quiet reset. Running is the newer chapter: I kicked it off with the 5K at UNPAK Race 2025, and I've been hooked on that post-run feeling ever since. Music keeps me company through most of it, whether I'm working, running, or just thinking. And when the weekend allows, I pack a picnic and find a shady spot to slow down for a while."
+   }
+  }
+ ],
+ "filters": [
+  {
+   "key": "all",
+   "label": {
+    "id": "Semua",
+    "en": "All"
+   }
+  },
+  {
+   "key": "riset",
+   "label": {
+    "id": "Riset",
+    "en": "Research"
+   }
+  },
+  {
+   "key": "auto",
+   "label": {
+    "id": "Otomasi",
+    "en": "Automation"
+   }
+  },
+  {
+   "key": "ai",
+   "label": {
+    "id": "Konten AI",
+    "en": "AI content"
+   }
+  },
+  {
+   "key": "tool",
+   "label": {
+    "id": "Alat bantu",
+    "en": "Tooling"
+   }
+  }
+ ],
+ "projects": [
+  {
+   "cat": "riset",
+   "title": {
+    "id": "Analisis kompetitif proyektor",
+    "en": "Projector competitive analysis"
+   },
+   "desc": {
+    "id": "Membandingkan proyektor AOC dengan kompetitor lewat skor dari ulasan pelanggan.",
+    "en": "Benchmarking AOC projectors against competitors using scores from customer reviews."
+   },
+   "tags": [
+    {
+     "id": "Analisis",
+     "en": "Analytics"
+    },
+    {
+     "id": "Ulasan pelanggan",
+     "en": "Customer reviews"
+    }
+   ],
+   "viz": "bars",
+   "data": [
+    40,
+    58,
+    72,
+    96,
+    118,
+    146
+   ]
+  },
+  {
+   "cat": "riset",
+   "title": {
+    "id": "Strategi Shopee BD02PRO",
+    "en": "Shopee strategy for BD02PRO"
+   },
+   "desc": {
+    "id": "Strategi pemasaran untuk bangku stainless steel di Shopee.",
+    "en": "Marketing strategy for a stainless steel stool on Shopee."
+   },
+   "tags": [
+    {
+     "id": "Strategi",
+     "en": "Strategy"
+    },
+    {
+     "id": "Marketplace",
+     "en": "Marketplace"
+    }
+   ],
+   "viz": "line",
+   "data": [
+    40,
+    70,
+    52,
+    96,
+    118,
+    100,
+    132,
+    150
+   ]
+  },
+  {
+   "cat": "ai",
+   "title": {
+    "id": "Produksi video pendek AI",
+    "en": "AI short video production"
+   },
+   "desc": {
+    "id": "Alur kerja video produk untuk e-commerce, termasuk pipeline Python dengan API pembuat video.",
+    "en": "A product-video workflow for e-commerce, including a Python pipeline with video-generation APIs."
+   },
+   "tags": [
+    {
+     "id": "Video AI",
+     "en": "AI video"
+    },
+    {
+     "id": "Python",
+     "en": "Python"
+    }
+   ],
+   "viz": "dots"
+  },
+  {
+   "cat": "tool",
+   "title": {
+    "id": "Ekstensi Chrome e-commerce",
+    "en": "E-commerce Chrome extensions"
+   },
+   "desc": {
+    "id": "Kumpulan ekstensi untuk mengambil data dari halaman marketplace.",
+    "en": "A suite of extensions that extract data from marketplace pages."
+   },
+   "tags": [
+    {
+     "id": "Chrome",
+     "en": "Chrome"
+    },
+    {
+     "id": "Data e-commerce",
+     "en": "E-commerce data"
+    }
+   ],
+   "viz": "scatter"
+  },
+  {
+   "cat": "tool",
+   "title": {
+    "id": "Pelacak desain Jibbitz",
+    "en": "Jibbitz design tracker"
+   },
+   "desc": {
+    "id": "Memantau desain charm sepatu dari draf sampai penjualan.",
+    "en": "Tracking shoe charm designs from draft to sales."
+   },
+   "tags": [
+    {
+     "id": "Pelacakan",
+     "en": "Tracking"
+    },
+    {
+     "id": "Desain",
+     "en": "Design"
+    }
+   ],
+   "viz": "steps",
+   "data": [
+    30,
+    30,
+    70,
+    70,
+    110,
+    110,
+    150
+   ]
+  },
+  {
+   "cat": "auto",
+   "title": {
+    "id": "Otomasi pemantauan data survei",
+    "en": "Survey data-collection monitoring"
+   },
+   "desc": {
+    "id": "Pemantauan pengumpulan data dan hasil survei otomatis dengan SQL, Python, dan Excel Macro.",
+    "en": "Automated monitoring of data collection and survey results with SQL, Python, and Excel macros."
+   },
+   "tags": [
+    {
+     "id": "SQL",
+     "en": "SQL"
+    },
+    {
+     "id": "Python",
+     "en": "Python"
+    }
+   ],
+   "viz": "line",
+   "data": [
+    90,
+    96,
+    88,
+    100,
+    60,
+    98,
+    94,
+    104
+   ]
+  },
+  {
+   "cat": "auto",
+   "title": {
+    "id": "Simulator harga berbasis Excel",
+    "en": "Excel-based pricing simulator"
+   },
+   "desc": {
+    "id": "Simulator harga otomatis dengan makro MS Excel, dibuat di PT Primera Indonesia (kini GfK).",
+    "en": "An automated pricing simulator built with MS Excel macros at PT Primera Indonesia (now GfK)."
+   },
+   "tags": [
+    {
+     "id": "Excel Macro",
+     "en": "Excel Macro"
+    },
+    {
+     "id": "Simulasi",
+     "en": "Simulation"
+    }
+   ],
+   "viz": "curve"
+  }
+ ],
+ "ui": {
+  "caseSoon": {
+   "id": "Studi kasus segera hadir",
+   "en": "Case study coming soon"
+  }
+ },
+ "strings": {
+  "top.1": {
+   "id": "Beranda",
+   "en": "Home"
+  },
+  "top.2": {
+   "id": "Proyek",
+   "en": "Projects"
+  },
+  "top.3": {
+   "id": "Tentang",
+   "en": "About"
+  },
+  "top.4": {
+   "id": "Kontak",
+   "en": "Contact"
+  },
+  "home.t-hero.1": {
+   "id": "Mengubah data<br>menjadi keputusan.",
+   "en": "Turning data<br>into decisions."
+  },
+  "home.t-hero.2": {
+   "id": "Lebih dari 14 tahun di riset pasar, pemrosesan data, dan manajemen panel.",
+   "en": "14+ years in market research, data processing, and panel management."
+  },
+  "home.t-hero.3": {
+   "id": "Lihat proyek",
+   "en": "Explore projects"
+  },
+  "home.t-hero.4": {
+   "id": "Riset sejak 2010",
+   "en": "Research since 2010"
+  },
+  "home.t-prof.1": {
+   "id": "Profil",
+   "en": "Profile"
+  },
+  "home.t-prof.2": {
+   "id": "Lihat profil lengkap",
+   "en": "View full profile"
+  },
+  "home.t-prof.3": {
+   "id": "tahun",
+   "en": "years"
+  },
+  "home.t-car.1": {
+   "id": "Karier",
+   "en": "Career"
+  },
+  "home.t-car.2": {
+   "id": "Lama per perusahaan",
+   "en": "Years per company"
+  },
+  "home.t-car.3": {
+   "id": "perusahaan",
+   "en": "companies"
+  },
+  "home.t-skill.1": {
+   "id": "Keahlian inti",
+   "en": "Core skills"
+  },
+  "home.t-skill.2": {
+   "id": "Data &amp; riset",
+   "en": "Data &amp; research"
+  },
+  "home.t-skill.3": {
+   "id": "Riset pasar",
+   "en": "Market research"
+  },
+  "home.t-skill.4": {
+   "id": "14+ tahun",
+   "en": "14+ years"
+  },
+  "home.t-skill.5": {
+   "id": "Survei &amp; pemrograman",
+   "en": "Surveys &amp; programming"
+  },
+  "home.t-skill.6": {
+   "id": "10+ tahun",
+   "en": "10+ years"
+  },
+  "home.t-skill.7": {
+   "id": "Alat sehari-hari untuk mengolah, memantau, dan mengotomatiskan data.",
+   "en": "Everyday tools to process, monitor, and automate data."
+  },
+  "home.t-skill.8": {
+   "id": "Lihat selengkapnya",
+   "en": "See more"
+  },
+  "home.t-role.1": {
+   "id": "Peran saat ini",
+   "en": "Current role"
+  },
+  "home.t-role.2": {
+   "id": "Jan 2025 – Sekarang",
+   "en": "Jan 2025 – Present"
+  },
+  "home.t-focus.1": {
+   "id": "Fokus saat ini",
+   "en": "Current focus"
+  },
+  "home.t-focus.2": {
+   "id": "Produk &amp; konten",
+   "en": "Product &amp; content"
+  },
+  "home.t-focus.3": {
+   "id": "Riset produk dan video pemasaran AI",
+   "en": "Product research and AI marketing video"
+  },
+  "home.t-con.1": {
+   "id": "Kontak",
+   "en": "Contact"
+  },
+  "home.t-con.2": {
+   "id": "Terbuka untuk peluang",
+   "en": "Open to opportunities"
+  },
+  "home.t-con.3": {
+   "id": "Mari terhubung",
+   "en": "Let us connect"
+  },
+  "projects.pj-h.1": {
+   "id": "Portofolio",
+   "en": "Portfolio"
+  },
+  "projects.pj-h.2": {
+   "id": "Proyek terpilih",
+   "en": "Selected projects"
+  },
+  "projects.pj-h.3": {
+   "id": "Riset, otomasi data, dan konten. Studi kasus lengkap menyusul.",
+   "en": "Research, data automation, and content. Full case studies to follow."
+  },
+  "projects.pj-c.1": {
+   "id": "Contoh",
+   "en": "Sample"
+  },
+  "projects.pj-c.2": {
+   "id": "proyek contoh; grafik hanya ilustrasi",
+   "en": "sample projects; charts are illustrations"
+  },
+  "about.ab-h.1": {
+   "id": "Tentang saya",
+   "en": "About me"
+  },
+  "about.ab-h.2": {
+   "id": "Peneliti yang mengubah<br><em>data menjadi arah.</em>",
+   "en": "A researcher who turns<br><em>data into direction.</em>"
+  },
+  "about.ab-h.3": {
+   "id": "Simpan CV (PDF)",
+   "en": "Save CV (PDF)"
+  },
+  "about.ab-p.1": {
+   "id": "Profil",
+   "en": "Profile"
+  },
+  "about.ab-v.1": {
+   "id": "Cara kerja",
+   "en": "How I work"
+  },
+  "about.ab-v.2": {
+   "id": "Analitis",
+   "en": "Analytical"
+  },
+  "about.ab-v.3": {
+   "id": "Mengubah data menjadi wawasan yang bisa ditindaklanjuti.",
+   "en": "Turning data into actionable insights."
+  },
+  "about.ab-v.4": {
+   "id": "Teliti",
+   "en": "Detail-oriented"
+  },
+  "about.ab-v.5": {
+   "id": "Pemeriksaan kualitas di setiap tahap.",
+   "en": "Quality checks at every stage."
+  },
+  "about.ab-v.6": {
+   "id": "Kolaboratif",
+   "en": "Collaborative"
+  },
+  "about.ab-v.7": {
+   "id": "Tim riset, produk, dan pemasaran.",
+   "en": "Research, product, and marketing teams."
+  },
+  "about.ab-b.1": {
+   "id": "Cerita saya",
+   "en": "My story"
+  },
+  "about.ab-x.1": {
+   "id": "Pengalaman",
+   "en": "Experience"
+  },
+  "about.ab-s.1": {
+   "id": "Keahlian",
+   "en": "Skills"
+  },
+  "about.ab-s.2": {
+   "id": "Alat",
+   "en": "Tools"
+  },
+  "about.ab-s.3": {
+   "id": "Riset",
+   "en": "Research"
+  },
+  "about.ab-s.4": {
+   "id": "Pemrograman survei",
+   "en": "Survey Programming"
+  },
+  "about.ab-s.5": {
+   "id": "Riset pasar",
+   "en": "Market Research"
+  },
+  "about.ab-s.6": {
+   "id": "Riset produk",
+   "en": "Product Research"
+  },
+  "about.ab-s.7": {
+   "id": "Manajemen panel",
+   "en": "Panel Management"
+  },
+  "about.ab-s.8": {
+   "id": "Kualitas data",
+   "en": "Data Quality"
+  },
+  "about.ab-s.9": {
+   "id": "Tambahan",
+   "en": "Additional"
+  },
+  "about.ab-s.10": {
+   "id": "Riset pengembangan produk",
+   "en": "Product Development Research"
+  },
+  "about.ab-s.11": {
+   "id": "Strategi pemasaran",
+   "en": "Marketing Strategy"
+  },
+  "about.ab-s.12": {
+   "id": "Konten berbantuan AI",
+   "en": "AI-assisted Content"
+  },
+  "about.ab-s.13": {
+   "id": "Dukungan IT",
+   "en": "IT Support"
+  },
+  "contact.ct-h.1": {
+   "id": "Kontak",
+   "en": "Contact"
+  },
+  "contact.ct-h.2": {
+   "id": "Mari bicara soal<br><em>data, produk, dan ide.</em>",
+   "en": "Let us talk about<br><em>data, products, and ideas.</em>"
+  },
+  "contact.ct-a.1": {
+   "id": "Terbuka untuk kolaborasi",
+   "en": "Available for collaboration"
+  },
+  "contact.ct-a.2": {
+   "id": "Data, riset produk, dan pekerjaan proyek.",
+   "en": "Data, product research, and project work."
+  },
+  "contact.ct-l.1": {
+   "id": "Lokasi",
+   "en": "Location"
+  },
+  "contact.ct-g.1": {
+   "id": "Bahasa",
+   "en": "Languages"
+  },
+  "contact.ct-g.2": {
+   "id": "Bahasa Indonesia",
+   "en": "Indonesian"
+  },
+  "contact.ct-g.3": {
+   "id": "Penutur asli",
+   "en": "Native"
+  },
+  "contact.ct-g.4": {
+   "id": "Inggris",
+   "en": "English"
+  },
+  "contact.ct-g.5": {
+   "id": "Profesional",
+   "en": "Professional"
+  },
+  "cv.1": {
+   "id": "PDF, 2 halaman",
+   "en": "PDF, 2 pages"
+  },
+  "cv.2": {
+   "id": "Unduh PDF",
+   "en": "Download PDF"
+  },
+  "cv.3": {
+   "id": "Tutup",
+   "en": "Close"
+  }
+ }
+}
