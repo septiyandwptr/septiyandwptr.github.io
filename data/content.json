@@ -7,7 +7,7 @@
   "linkedin": "https://www.linkedin.com/in/septiyan-dwi-putra-03147445",
   "cvFile": "assets/docs/Septiyan_Dwi_Putra_-_CV.pdf",
   "cvName": "Septiyan_Dwi_Putra_-_CV.pdf",
-  "version": "3bf95c9afe"
+  "version": "4bc63ea227"
  },
  "pageTitles": {
   "home": {
@@ -307,26 +307,113 @@
    ]
   },
   {
+   "id": "ai-video",
    "cat": "ai",
    "title": {
-    "id": "Produksi video pendek AI",
-    "en": "AI short video production"
+    "id": "Produksi Konten Video AI – @si.oyen.ndut",
+    "en": "AI Video Content Production – @si.oyen.ndut"
    },
    "desc": {
-    "id": "Alur kerja video produk untuk e-commerce, termasuk pipeline Python dengan API pembuat video.",
-    "en": "A product-video workflow for e-commerce, including a Python pipeline with video-generation APIs."
+    "id": "Alur produksi video animasi & storytelling kuliner di TikTok (@si.oyen.ndut / Tiny Chef Oyen). Menggabungkan generative AI video, automasi prompt Python, voice synthesis, dan penempatan produk e-commerce (mencapai 22.5k+ views).",
+    "en": "Production workflow for animated culinary storytelling videos on TikTok (@si.oyen.ndut / Tiny Chef Oyen). Combines generative AI video, Python prompt automation, voice synthesis, and e-commerce product placement (reaching 22.5k+ views)."
    },
    "tags": [
     {
+     "id": "TikTok @si.oyen.ndut",
+     "en": "TikTok @si.oyen.ndut"
+    },
+    {
      "id": "Video AI",
-     "en": "AI video"
+     "en": "AI Video"
     },
     {
      "id": "Python",
      "en": "Python"
+    },
+    {
+     "id": "Storytelling",
+     "en": "Storytelling"
     }
    ],
-   "viz": "dots"
+   "viz": "tiktok",
+   "btn": {
+    "id": "Lihat Studi Kasus & TikTok",
+    "en": "View Case Study & TikTok"
+   },
+   "case": {
+    "type": "tiktok",
+    "handle": "@si.oyen.ndut",
+    "url": "https://www.tiktok.com/@si.oyen.ndut",
+    "tagline": {
+     "id": "Tiny Chef Oyen 🍳 · Serial Video Kuliner & Storytelling AI",
+     "en": "Tiny Chef Oyen 🍳 · AI Culinary & Storytelling Video Series"
+    },
+    "stats": [
+     {
+      "val": "22.5k+",
+      "lbl": {
+       "id": "Penonton puncak",
+       "en": "Peak views"
+      }
+     },
+     {
+      "val": "5,000+",
+      "lbl": {
+       "id": "Total suka",
+       "en": "Total likes"
+      }
+     },
+     {
+      "val": "890+",
+      "lbl": {
+       "id": "Pengikut aktif",
+       "en": "Followers"
+      }
+     },
+     {
+      "val": "Harian",
+      "lbl": {
+       "id": "Episode masak",
+       "en": "Daily episodes"
+      }
+     }
+    ],
+    "highlights": [
+     {
+      "icon": "cat",
+      "title": {
+       "id": "Karakter & Cerita",
+       "en": "Character & Storytelling"
+      },
+      "desc": {
+       "id": "Membangun persona 'Tiny Chef Oyen', seekor kucing oren juru masak yang menyiapkan menu rumahan favorit dengan humor kocak, hangat, dan interaktif.",
+       "en": "Built the 'Tiny Chef Oyen' persona, an orange cat chef preparing homely recipes with warm, humorous, and engaging episodic storylines."
+      }
+     },
+     {
+      "icon": "pipeline",
+      "title": {
+       "id": "Pipeline AI Generatif",
+       "en": "Generative AI Pipeline"
+      },
+      "desc": {
+       "id": "Konsistensi karakter via prompt engineering, text-to-video / image-to-video motion, perancangan audio & voiceover AI, serta skrip automasi penggabungan video dengan Python.",
+       "en": "Character consistency via prompt engineering, image-to-video animation, AI voiceover synthesis, and Python automation for asset processing."
+      }
+     },
+     {
+      "icon": "commercial",
+      "title": {
+       "id": "Strategi Komersial & Produk",
+       "en": "Commercial & Product Placement"
+      },
+      "desc": {
+       "id": "Menyelipkan produk peralatan rumah tangga dan stainless steel (seperti King Balance) secara natural ke dalam jalan cerita tanpa merusak kehangatan konten.",
+       "en": "Naturally integrated household and stainless-steel kitchenware (such as King Balance) directly into the plot without compromising content charm."
+      }
+     }
+    ]
+   }
   },
   {
    "cat": "tool",
@@ -351,35 +438,116 @@
    "viz": "scatter"
   },
   {
+   "id": "shoe-charms",
    "cat": "tool",
    "title": {
-    "id": "Pelacak desain Jibbitz",
-    "en": "Jibbitz design tracker"
+    "id": "Shoe Charms Design Tracker",
+    "en": "Shoe Charms Design Tracker"
    },
    "desc": {
-    "id": "Memantau desain charm sepatu dari draf sampai penjualan.",
-    "en": "Tracking shoe charm designs from draft to sales."
+    "id": "Aplikasi browser lokal untuk memantau siklus desain charm sepatu (dari draf, revisi, hingga produksi). Didukung Claude AI API untuk mengekstrak data dari berkas PDF/foto desain dan File System API lokal tanpa server/database.",
+    "en": "Local-first browser application to manage shoe charm design lifecycles (from draft and revisions to production). Powered by Claude AI API to ingest design PDFs/photos and local File System API without external servers or databases."
    },
    "tags": [
     {
-     "id": "Pelacakan",
-     "en": "Tracking"
+     "id": "Claude AI API",
+     "en": "Claude AI API"
     },
     {
-     "id": "Desain",
-     "en": "Design"
+     "id": "File System API",
+     "en": "File System API"
+    },
+    {
+     "id": "Pelacak Desain",
+     "en": "Design Tracker"
+    },
+    {
+     "id": "Excel / CSV",
+     "en": "Excel / CSV"
     }
    ],
-   "viz": "steps",
-   "data": [
-    30,
-    30,
-    70,
-    70,
-    110,
-    110,
-    150
-   ]
+   "viz": "tracker",
+   "btn": {
+    "id": "Lihat Pratinjau & Alur",
+    "en": "View Preview & Workflow"
+   },
+   "case": {
+    "type": "tracker",
+    "image": "assets/img/shoe-charms-tracker.png",
+    "tagline": {
+     "id": "Aplikasi Workflow Desain Berbasis Folder Lokal dengan Integrasi Multimodal Claude AI",
+     "en": "Local Folder-Based Design Workflow App with Claude AI Multimodal Ingestion"
+    },
+    "stats": [
+     {
+      "val": "20",
+      "lbl": {
+       "id": "Semua desain",
+       "en": "Total designs"
+      },
+      "badge": "tot"
+     },
+     {
+      "val": "9",
+      "lbl": {
+       "id": "Sedang produksi",
+       "en": "In production"
+      },
+      "badge": "prod"
+     },
+     {
+      "val": "2",
+      "lbl": {
+       "id": "Update versi",
+       "en": "Update version"
+      },
+      "badge": "ver"
+     },
+     {
+      "val": "1",
+      "lbl": {
+       "id": "Rilis (Published)",
+       "en": "Published"
+      },
+      "badge": "pub"
+     }
+    ],
+    "highlights": [
+     {
+      "icon": "folder",
+      "title": {
+       "id": "Penyimpanan Folder Lokal",
+       "en": "Direct Local File System"
+      },
+      "desc": {
+       "id": "Semua data, foto desain, berkas sumber, dan ekspor tersimpan di folder lokal komputer via File System Access API Chrome/Edge tanpa ketergantungan cloud database.",
+       "en": "All data, design photos, source files, and exports stay securely in the user's local folder via Chrome/Edge File System Access API without cloud database dependencies."
+      }
+     },
+     {
+      "icon": "brain",
+      "title": {
+       "id": "Ekstraksi Dokumen Claude AI",
+       "en": "Claude AI Document Ingestion"
+      },
+      "desc": {
+       "id": "Membaca berkas PDF gambar teknik, foto sampel JPG/PNG/WEBP, atau teks; Claude mendeteksi revisi desain (warna, dimensi cm, tema) dan mengusulkan status progres sebelum diverifikasi pengguna.",
+       "en": "Parses technical drawing PDFs, sample photos, and spec sheets; Claude detects design revisions (colors, dimensions, themes) and proposes status updates for human review."
+      }
+     },
+     {
+      "icon": "table",
+      "title": {
+       "id": "Pipeline Status & Portabilitas",
+       "en": "Status Pipeline & Portability"
+      },
+      "desc": {
+       "id": "Pelacakan alur Draft -> Update Version -> Production -> Mix&Match -> Published, lengkap dengan spesifikasi material cetakan karet serta ekspor/impor Excel & CSV.",
+       "en": "Tracks the Draft -> Update Version -> Production -> Mix&Match -> Published lifecycle with rubber mould technical specs and one-click Excel/CSV import and export."
+      }
+     }
+    ]
+   }
   },
   {
    "cat": "auto",

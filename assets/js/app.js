@@ -1,4 +1,4 @@
-var APP_V="3bf95c9afe";
+var APP_V="4bc63ea227";
 /* Portfolio app: reads data/content.json (or the inlined copy in the single-file build) */
 function start(DATA){
 var D=document,root=D.documentElement;
@@ -46,15 +46,56 @@ D.querySelectorAll('#tb-exp .tabs button').forEach(function(bt,i){if(XP[i].one)b
 
 /* charts */
 function rnd(seed){var s=seed;return function(){s=(s*9301+49297)%233280;return s/233280}}
-function viz(k,d){
+function viz(k,d,p){
+  if(k==='tiktok'){
+    return '<div class="card-viz-tiktok">' +
+      '<div class="tiktok-top">' +
+        '<span class="tiktok-tag"><svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298 0 .586.046.86.13V9.42a6.34 6.34 0 0 0-.86-.06 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.52a8.27 8.27 0 0 0 4.78 1.48V6.69z"/></svg> TikTok</span>' +
+        '<span class="tiktok-handle">@si.oyen.ndut</span>' +
+      '</div>' +
+      '<div class="tiktok-center">' +
+        '<div class="cat-avatar" role="img" aria-label="Tiny Chef Oyen">🐱</div>' +
+        '<div class="tiktok-meta">' +
+          '<b>Tiny Chef Oyen 🍳</b>' +
+          '<div class="sound-wave"><i></i><i></i><i></i><i></i><i></i><i></i></div>' +
+        '</div>' +
+      '</div>' +
+      '<div class="tiktok-stats">' +
+        '<span class="t-stat"><b>22.5k</b> views</span>' +
+        '<span class="t-stat"><b>5k+</b> likes</span>' +
+        '<span class="t-stat live"><i class="dot"></i> Daily</span>' +
+      '</div>' +
+    '</div>';
+  }
+  if(k==='tracker'){
+    return '<div class="card-viz-tracker">' +
+      '<div class="tracker-top">' +
+        '<div class="tracker-badge">' +
+          '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>' +
+          '<span>Shoe Charms</span>' +
+        '</div>' +
+        '<span class="ai-chip">Claude AI</span>' +
+      '</div>' +
+      '<div class="tracker-metrics">' +
+        '<div class="tm-pill tot"><b>20</b><small>Total</small></div>' +
+        '<div class="tm-pill prod"><b>9</b><small>Prod</small></div>' +
+        '<div class="tm-pill ver"><b>2</b><small>Update</small></div>' +
+        '<div class="tm-pill pub"><b>1</b><small>Live</small></div>' +
+      '</div>' +
+      '<div class="tracker-rows">' +
+        '<div class="tr-row"><i class="st-dot grn"></i><span>Dreamy Unicorn</span><small>Girls</small></div>' +
+        '<div class="tr-row"><i class="st-dot ylw"></i><span>Astronot (v2)</span><small>Boys</small></div>' +
+      '</div>' +
+    '</div>';
+  }
   var o='<svg viewBox="0 0 400 200" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">',i,n;
   for(i=0;i<4;i++)o+='<path d="M20 '+(24+i*44)+'H386" stroke-width="1" opacity=".16"/>';
   if(k==='bars'){d.forEach(function(h,i){o+='<rect class="bar" style="--j:'+i+'" x="'+(36+i*58)+'" y="'+(188-h)+'" width="40" height="'+h+'" rx="20" fill="currentColor" stroke="none" opacity=".8"/>'})}
   else if(k==='line'||k==='steps'){
-    n=d.length;var pts=d.map(function(v,i){return [30+i*(340/(n-1)),188-v]}),p='';
-    if(k==='line')pts.forEach(function(q,i){p+=(i?'L':'M')+q[0].toFixed(1)+' '+q[1]});
-    else pts.forEach(function(q,i){p+=(i?'H'+q[0].toFixed(1)+'V'+q[1]:'M'+q[0].toFixed(1)+' '+q[1])});
-    o+='<path class="dr" pathLength="1" d="'+p+'"/>';
+    n=d.length;var pts=d.map(function(v,i){return [30+i*(340/(n-1)),188-v]}),p2='';
+    if(k==='line')pts.forEach(function(q,i){p2+=(i?'L':'M')+q[0].toFixed(1)+' '+q[1]});
+    else pts.forEach(function(q,i){p2+=(i?'H'+q[0].toFixed(1)+'V'+q[1]:'M'+q[0].toFixed(1)+' '+q[1])});
+    o+='<path class="dr" pathLength="1" d="'+p2+'"/>';
     if(k==='line')pts.forEach(function(q){o+='<circle cx="'+q[0]+'" cy="'+q[1]+'" r="4" fill="#0D0D0D"/>'});
   }
   else if(k==='scatter'){var r=rnd(7);for(i=0;i<110;i++){var a=i%2,x=a?280+(r()-.5)*110:70+r()*130,y=a?100+(r()-.5)*100:150-(x-70)*.55+(r()-.5)*40;o+='<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="2.4" fill="currentColor" stroke="none" opacity=".85"/>'}}
@@ -70,7 +111,18 @@ function renderCards(){
   var L=PRJ.filter(function(p){return pf==='all'||p.cat===pf}),pages=Math.max(1,Math.ceil(L.length/PER));
   if(pg>=pages)pg=0;if(pg<0)pg=pages-1;
   cards.innerHTML=L.slice(pg*PER,pg*PER+PER).map(function(p){
-    return '<article class="tile card"><div class="viz">'+viz(p.viz,p.data)+'<i class="cb"><i class="ar"></i></i></div><h3>'+T(p.title)+'</h3><p>'+T(p.desc)+'</p><div class="tags">'+p.tags.map(function(g){return '<span>'+T(g)+'</span>'}).join('')+'</div><span class="more">'+T(DATA.ui.caseSoon)+'</span></article>';
+    var hasCase=!!p.case;
+    var btnLabel=p.btn?T(p.btn):T(DATA.ui.caseSoon);
+    var act=hasCase
+      ?'<button type="button" class="card-btn" data-pid="'+p.id+'"><span>'+btnLabel+'</span><i class="ar">'+ARW+'</i></button>'
+      :'<span class="more">'+btnLabel+'</span>';
+    return '<article class="tile card'+(hasCase?' has-case':'')+'"'+(hasCase?' data-pid="'+p.id+'" tabindex="0" role="button" aria-haspopup="dialog"':'')+'>' +
+      '<div class="viz">'+viz(p.viz,p.data,p)+'<i class="cb"><i class="ar">'+ARW+'</i></i></div>' +
+      '<h3>'+T(p.title)+'</h3>' +
+      '<p>'+T(p.desc)+'</p>' +
+      '<div class="tags">'+p.tags.map(function(g){return '<span>'+T(g)+'</span>'}).join('')+'</div>' +
+      act +
+    '</article>';
   }).join('');
   cards.querySelectorAll('i.ar').forEach(function(e){e.innerHTML=ARW});
   var ts=cards.querySelectorAll('.tile');
@@ -95,7 +147,16 @@ var btns=D.querySelectorAll('.lang button'),PAGES=['home','projects','about','co
 var TT=DATA.pageTitles;
 var cur=PAGES.indexOf(location.hash.slice(1))>-1?location.hash.slice(1):'home';
 function title(){D.title=TT[cur][root.getAttribute('data-l')==='en'?'en':'id']+DATA.meta.titleSuffix}
-function setLang(l){root.setAttribute('data-l',l);root.lang=l;btns.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.set===l))});title();try{localStorage.setItem('lang',l)}catch(e){}setTimeout(updInd,30)}
+function setLang(l){
+  root.setAttribute('data-l',l);
+  root.lang=l;
+  btns.forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.set===l))});
+  title();
+  try{localStorage.setItem('lang',l)}catch(e){}
+  if(ready)renderCards();
+  if(curProj&&renderProjectModal)renderProjectModal(curProj);
+  setTimeout(updInd,30);
+}
 btns.forEach(function(x){x.addEventListener('click',function(){setLang(x.dataset.set)})});
 var sv=null;try{sv=localStorage.getItem('lang')}catch(e){}
 if(sv==='id'||sv==='en')setLang(sv);
@@ -357,6 +418,126 @@ if(fine&&!reduce){
     else if(e.key==='Tab'){var f=[dl,x],i=f.indexOf(D.activeElement);e.preventDefault();f[(i+(e.shiftKey?-1:1)+f.length)%f.length].focus()}
   });
 })();
+
+/* Project case study modal */
+var curProj=null;
+var pjm=D.getElementById('pjm'),pjmbk=D.getElementById('pjmbk'),pjmx=D.getElementById('pjmx'),pjmt=D.getElementById('pjmt'),pjmsub=D.getElementById('pjmsub'),pjmlink=D.getElementById('pjmlink'),pjmbody=D.getElementById('pjmbody');
+
+function renderProjectModal(prj){
+  curProj=prj;
+  pjmt.innerHTML=T(prj.title);
+  pjmsub.innerHTML=prj.cat==='ai'?b('Konten AI &amp; Video Storytelling','AI Content &amp; Video Storytelling'):b('Alat Bantu &amp; Otomasi','Tooling &amp; Automation');
+  if(prj.case.url){
+    pjmlink.hidden=false;pjmlink.href=prj.case.url;
+    pjmlink.querySelector('span').innerHTML=b('Buka TikTok @si.oyen.ndut &nearr;','Open TikTok @si.oyen.ndut &nearr;');
+  }else{
+    pjmlink.hidden=true;
+  }
+  if(prj.case.type==='tiktok'){
+    pjmbody.innerHTML=
+      '<div class="pjm-hero tiktok-hero">' +
+        '<div class="pjm-hero-top">' +
+          '<div class="pjm-hero-channel">' +
+            '<div class="pjm-hero-ava" role="img" aria-label="Tiny Chef Oyen">🐱</div>' +
+            '<div class="pjm-hero-name">' +
+              '<h3>SI OYEN NDUT <small style="font-size:.82rem;opacity:.75;font-weight:600">(@si.oyen.ndut)</small></h3>' +
+              '<p>'+T(prj.case.tagline)+'</p>' +
+            '</div>' +
+          '</div>' +
+          '<a href="'+prj.case.url+'" target="_blank" rel="noopener" class="pjm-cta-btn">' +
+            '<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298 0 .586.046.86.13V9.42a6.34 6.34 0 0 0-.86-.06 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.52a8.27 8.27 0 0 0 4.78 1.48V6.69z"/></svg>' +
+            '<span>'+b('Tonton di TikTok','Watch on TikTok')+'</span>' +
+          '</a>' +
+        '</div>' +
+        '<div class="pjm-stats-grid">' +
+          prj.case.stats.map(function(s){
+            return '<div class="pjm-stat-card"><b>'+s.val+'</b><small>'+T(s.lbl)+'</small></div>';
+          }).join('') +
+        '</div>' +
+      '</div>' +
+      '<div>' +
+        '<h4 class="pjm-section-title">'+b('Alur Kerja &amp; Proses Kreatif','Workflow &amp; Creative Process')+'</h4>' +
+        '<div class="pjm-cards">' +
+          prj.case.highlights.map(function(h){
+            return '<div class="pjm-card"><b>'+T(h.title)+'</b><p>'+T(h.desc)+'</p></div>';
+          }).join('') +
+        '</div>' +
+      '</div>' +
+      '<div>' +
+        '<h4 class="pjm-section-title">'+b('Teknologi &amp; Alat Bantu','Tech Stack &amp; Tools')+'</h4>' +
+        '<div class="pjm-tags">' +
+          prj.tags.map(function(g){return '<span>'+T(g)+'</span>'}).join('') +
+          '<span>Midjourney / Flux</span><span>AI Motion / Video Gen</span><span>Voice Synthesis</span><span>TikTok Analytics</span>' +
+        '</div>' +
+      '</div>';
+  }else if(prj.case.type==='tracker'){
+    pjmbody.innerHTML=
+      '<div class="pjm-hero">' +
+        '<img src="'+prj.case.image+'?v='+(window.SITE_V||'')+'" alt="Screenshot Shoe Charms Design Tracker" style="max-height:480px;object-fit:contain;background:#0d1117">' +
+      '</div>' +
+      '<div>' +
+        '<div class="pjm-stats-grid">' +
+          prj.case.stats.map(function(s){
+            return '<div class="pjm-stat-card light '+(s.badge||'')+'"><b>'+s.val+'</b><small>'+T(s.lbl)+'</small></div>';
+          }).join('') +
+        '</div>' +
+      '</div>' +
+      '<div>' +
+        '<h4 class="pjm-section-title">'+b('Arsitektur &amp; Fitur Utama','Key Architecture &amp; Features')+'</h4>' +
+        '<div class="pjm-cards">' +
+          prj.case.highlights.map(function(h){
+            return '<div class="pjm-card"><b>'+T(h.title)+'</b><p>'+T(h.desc)+'</p></div>';
+          }).join('') +
+        '</div>' +
+      '</div>' +
+      '<div>' +
+        '<h4 class="pjm-section-title">'+b('Teknologi &amp; Integrasi','Technologies &amp; Integrations')+'</h4>' +
+        '<div class="pjm-tags">' +
+          prj.tags.map(function(g){return '<span>'+T(g)+'</span>'}).join('') +
+          '<span>Chrome File System Access API</span><span>Claude Multimodal Ingestion</span><span>Local-First Architecture</span><span>Zero Database Setup</span>' +
+        '</div>' +
+      '</div>';
+  }
+}
+
+function openProjectModal(pid){
+  var prj=PRJ.find(function(x){return x.id===pid});
+  if(!prj||!prj.case)return;
+  renderProjectModal(prj);
+  pjm.hidden=false;
+  pjmx.focus();
+}
+function closeProjectModal(){
+  if(pjm)pjm.hidden=true;
+  curProj=null;
+}
+if(cards){
+  cards.addEventListener('click',function(e){
+    var trigger=e.target.closest('[data-pid]');
+    if(trigger)openProjectModal(trigger.getAttribute('data-pid'));
+  });
+  cards.addEventListener('keydown',function(e){
+    if(e.key==='Enter'||e.key===' '){
+      var trigger=e.target.closest('[data-pid]');
+      if(trigger){e.preventDefault();openProjectModal(trigger.getAttribute('data-pid'))}
+    }
+  });
+}
+if(pjmx)pjmx.addEventListener('click',closeProjectModal);
+if(pjmbk)pjmbk.addEventListener('click',closeProjectModal);
+D.addEventListener('keydown',function(e){
+  if(pjm&&!pjm.hidden){
+    if(e.key==='Escape'){e.preventDefault();closeProjectModal()}
+    else if(e.key==='Tab'){
+      var f=[pjmlink,pjmx].filter(function(x){return x&&!x.hidden});
+      if(f.length>1){
+        var i=f.indexOf(D.activeElement);
+        e.preventDefault();
+        f[(i+(e.shiftKey?-1:1)+f.length)%f.length].focus();
+      }
+    }
+  }
+});
 
 }
 

@@ -58,4 +58,4 @@ Browser memblokir pemuatan `content.json` bila `index.html` dibuka dengan klik g
 
 ## Membuat ulang versi satu file
 
-Setelah mengedit file apa pun: `python3 build.py` (butuh Python 3, tanpa tambahan paket).
+Setelah mengedit file apa pun: jalankan `node build.js` atau `python3 build.py` (tanpa dependensi eksternal). File `dist/portfolio.html` akan langsung diperbarui dengan nomor versi terbaru dan semua asset inlined.

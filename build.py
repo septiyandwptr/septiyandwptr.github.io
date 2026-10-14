@@ -44,6 +44,9 @@ css=re.sub(r'url\(\.\./img/([^)?]+)(?:\?[^)]*)?\)',lambda m:'url('+uri('assets/i
 # HTML: src="assets/img/x.webp" -> data URI
 html=re.sub(r'src="assets/img/([^"?]+)(?:\?[^"]*)?"',lambda m:'src="'+uri('assets/img/'+m.group(1))+'"',html)
 # JSON inlined (escape "<" so it can never close the script tag)
+for prj in data.get('projects', []):
+    if prj.get('case', {}).get('image', '').startswith('assets/img/'):
+        prj['case']['image'] = uri(prj['case']['image'])
 blob=json.dumps(data,ensure_ascii=False).replace('<','\\u003c')
 cv=base64.b64encode(read(data['meta']['cvFile'],'rb')).decode()
 
