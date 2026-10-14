@@ -24,7 +24,7 @@ Teks dwibahasa memakai pasangan `{ "id": "...", "en": "..." }`.
 | `story` | tab Perjalanan / Latar belakang / Passion |
 | `projects` | kartu di halaman Proyek (`cat`, `title`, `desc`, `tags`, `viz`, `data`) |
 | `filters` | tombol filter di halaman Proyek |
-| `career` | batang karier di kartu Karier (Beranda) |
+| `career` | batang karier di kartu Karier (Beranda): `label` = nama perusahaan di bawah batang, `years` = tinggi batang |
 | `strings` | teks lain di semua kartu, menu, dan jendela CV |
 
 Kunci di `strings` mengikuti pola `halaman.kartu.urutan`, misalnya `home.t-hero.1` adalah teks pertama

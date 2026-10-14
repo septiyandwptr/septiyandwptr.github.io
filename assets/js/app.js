@@ -13,7 +13,7 @@ D.querySelectorAll('[data-linkedin]').forEach(function(el){el.href=DATA.meta.lin
 
 /* career capsules */
 var CAPS=DATA.career;
-D.getElementById('caps').innerHTML=CAPS.map(function(c,i){return '<div class="cap" title="'+c.name+', '+c.years+'"><i style="--h:'+Math.max(12,Math.round(c.years/9.3*100))+';--j:'+i+'"></i><small>'+c.initial+'</small></div>'}).join('');
+D.getElementById('caps').innerHTML=CAPS.map(function(c,i){return '<div class="cap" title="'+c.name+', '+c.years+'"><i style="--h:'+Math.max(12,Math.round(c.years/9.3*100))+';--j:'+i+'"></i><small><span class="l">'+(c.label||c.name)+'</span><span class="s">'+c.initial+'</span></small></div>'}).join('');
 
 /* tabs data */
 var XP=DATA.experience.map(function(x){

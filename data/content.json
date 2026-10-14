@@ -30,22 +30,26 @@
   {
    "initial": "S",
    "name": "Synovate (IPSOS)",
-   "years": 1.5
+   "years": 1.5,
+   "label": "Synovate"
   },
   {
    "initial": "P",
    "name": "Primera (GfK)",
-   "years": 3.2
+   "years": 3.2,
+   "label": "Primera"
   },
   {
    "initial": "Y",
    "name": "YouGov",
-   "years": 9.3
+   "years": 9.3,
+   "label": "YouGov"
   },
   {
    "initial": "B",
    "name": "Balance",
-   "years": 1.8
+   "years": 1.8,
+   "label": "Balance"
   }
  ],
  "experience": [
@@ -148,8 +152,8 @@
     "en": "Jul 2010 – Oct 2010"
    },
    "desc": {
-    "id": "Menyiapkan dan mengonfigurasi perangkat baru untuk staf, serta memelihara server file dan infrastruktur jaringan. Bertanggung jawab atas pemeliharaan aplikasi BPKB Online di Polres Cilegon.",
-    "en": "Prepared and configured new devices for staff, maintained file servers and network infrastructure, and managed the maintenance of the BPKB Online application at Cilegon Police Resort."
+    "id": "Menyiapkan perangkat baru untuk staf serta memelihara server file dan jaringan.",
+    "en": "Set up new devices for staff and maintained the file server and network."
    }
   }
  ],
@@ -538,10 +542,6 @@
    "id": "Fokus saat ini",
    "en": "Current focus"
   },
-  "home.t-focus.2": {
-   "id": "Produk &amp; konten",
-   "en": "Product &amp; content"
-  },
   "home.t-focus.3": {
    "id": "Riset produk dan video pemasaran AI",
    "en": "Product research and AI marketing video"
@@ -733,6 +733,18 @@
   "cv.3": {
    "id": "Tutup",
    "en": "Close"
+  },
+  "home.t-skill.dm1": {
+   "id": "Manajemen data",
+   "en": "Data management"
+  },
+  "home.t-skill.dm2": {
+   "id": "14+ tahun",
+   "en": "14+ years"
+  },
+  "home.t-focus.4": {
+   "id": "Mengubah wawasan menjadi produk yang lebih baik dan cerita yang lebih kuat.",
+   "en": "Turning insights into better products and stronger stories."
   }
  }
 }
