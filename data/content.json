@@ -6,7 +6,8 @@
   "email": "septiyan.dwptr@gmail.com",
   "linkedin": "https://www.linkedin.com/in/septiyan-dwi-putra-03147445",
   "cvFile": "assets/docs/Septiyan_Dwi_Putra_-_CV.pdf",
-  "cvName": "Septiyan_Dwi_Putra_-_CV.pdf"
+  "cvName": "Septiyan_Dwi_Putra_-_CV.pdf",
+  "version": "3bf95c9afe"
  },
  "pageTitles": {
   "home": {
@@ -152,8 +153,8 @@
     "en": "Jul 2010 – Oct 2010"
    },
    "desc": {
-    "id": "Menyiapkan dan mengonfigurasi perangkat baru untuk staf, memelihara file server dan infrastruktur jaringan, serta menangani pemeliharaan aplikasi BPKB Online di Polres Cilegon.",
-    "en": "Prepared and configured new devices for staff, maintained file servers and network infrastructure, and managed the maintenance of the BPKB Online application at Cilegon Police Resort."
+    "id": "Menyiapkan perangkat baru untuk staf serta memelihara server file dan jaringan.",
+    "en": "Set up new devices for staff and maintained the file server and network."
    }
   }
  ],

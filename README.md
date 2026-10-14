@@ -36,8 +36,18 @@ Angka yang dihitung naik (mis. 14+ tahun, 04 perusahaan) ada di `index.html` pad
 
 ## Cara memasang di hosting
 
-Unggah isi folder ini: `index.html`, folder `assets/`, dan folder `data/` (build.py, dist, README.md tidak wajib).
-Tidak perlu pengaturan server.
+**Pilihan 1 (paling aman, satu file):** unggah `dist/portfolio.html` dan ganti namanya menjadi `index.html`.
+Semua isi (CSS, JS, data, gambar, CV) sudah ada di dalamnya, jadi tidak mungkin tercampur dengan file lama.
+Setelah mengedit `content.json`, jalankan `python3 build.py` lalu unggah ulang file itu.
+
+**Pilihan 2 (multi-file):** unggah SEMUA ini setiap kali ada perubahan, bukan hanya `index.html`:
+`index.html`, folder `assets/` (css, js, img, docs), dan folder `data/`. Lalu buka situs dan tekan Ctrl+F5.
+
+Setiap file diberi nomor versi (mis. `style.css?v=3bf95c9afe`) supaya browser tidak memakai salinan lama.
+Jalankan `python3 build.py` sebelum mengunggah agar nomor versi diperbarui. Jika ada file yang belum terunggah
+atau masih lama, situs menampilkan pesan peringatan di bagian bawah layar.
+
+Gejala bila file tercampur: gambar latar tidak muncul, teks kartu kosong, atau ikon tampil terlalu besar.
 
 ## Menjalankan di komputer sendiri
 

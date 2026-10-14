@@ -1,3 +1,4 @@
+var APP_V="3bf95c9afe";
 /* Portfolio app: reads data/content.json (or the inlined copy in the single-file build) */
 function start(DATA){
 var D=document,root=D.documentElement;
@@ -6,6 +7,13 @@ function b(i,e){return '<span lang="id">'+i+'</span><span lang="en">'+e+'</span>
 function T(v){return typeof v==='string'?v:b(v.id,v.en)}
 var ARW='<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>';
 
+/* warn when files from different uploads are mixed (old cache or an incomplete upload) */
+if(window.SITE_V&&(DATA.meta.version!==window.SITE_V||APP_V!==window.SITE_V)){
+  var vb=D.createElement('p');vb.setAttribute('role','alert');
+  vb.style.cssText='position:fixed;left:12px;right:12px;bottom:12px;z-index:200;margin:0;font:13px/1.5 system-ui,sans-serif;background:#fff;color:#000;border:2px solid #000;border-radius:12px;padding:10px 14px';
+  vb.textContent='Sebagian file website belum terbarui. Unggah ulang SEMUA file (index.html, assets/, data/) lalu muat ulang dengan Ctrl+F5. / Some site files are out of date: upload ALL files (index.html, assets/, data/) and hard-refresh (Ctrl+F5).';
+  D.body.appendChild(vb);
+}
 /* fill bilingual text and contact data from content.json */
 D.querySelectorAll('[data-t]').forEach(function(el){var v=DATA.strings[el.getAttribute('data-t')];if(v)el.innerHTML=b(v.id,v.en)});
 D.querySelectorAll('[data-mail]').forEach(function(el){el.href='mailto:'+DATA.meta.email;el.textContent=DATA.meta.email});
@@ -327,7 +335,7 @@ if(fine&&!reduce){
   function msg(i,e){st.innerHTML=b(i,e)}
   function cvBytes(){
     if(window.CV_B64){var bin=atob(window.CV_B64),u=new Uint8Array(bin.length);for(var i=0;i<bin.length;i++)u[i]=bin.charCodeAt(i);return Promise.resolve(u)}
-    return fetch(DATA.meta.cvFile).then(function(r){if(!r.ok)throw new Error('cv');return r.arrayBuffer()}).then(function(buf){return new Uint8Array(buf)});
+    return fetch(DATA.meta.cvFile+'?v='+(window.SITE_V||'')).then(function(r){if(!r.ok)throw new Error('cv');return r.arrayBuffer()}).then(function(buf){return new Uint8Array(buf)});
   }
   async function save(){
     var name=DATA.meta.cvName,blob;
@@ -355,7 +363,7 @@ if(fine&&!reduce){
 (function(){
   var inline=document.getElementById('site-data');
   if(inline){start(JSON.parse(inline.textContent));return}
-  fetch('data/content.json').then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).then(start).catch(function(err){
+  fetch('data/content.json?v='+(window.SITE_V||Date.now()),{cache:'no-cache'}).then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).then(start).catch(function(err){
     document.documentElement.classList.remove('loading');document.documentElement.classList.add('safe');
     var m=document.createElement('p');m.style.cssText='position:fixed;left:16px;right:16px;top:16px;z-index:200;font:14px/1.5 system-ui;background:#fff;color:#000;border:2px solid #000;border-radius:12px;padding:12px';
     m.textContent='Gagal memuat data/content.json. Jika membuka file langsung dari komputer, jalankan lewat server lokal (mis. "python -m http.server") atau gunakan dist/portfolio.html. / Could not load data/content.json. Serve the folder over HTTP or use dist/portfolio.html.';
