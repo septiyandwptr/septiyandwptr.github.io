@@ -1,4 +1,4 @@
-var APP_V="4bc63ea227";
+var APP_V="e8b1a6da14";
 /* Portfolio app: reads data/content.json (or the inlined copy in the single-file build) */
 function start(DATA){
 var D=document,root=D.documentElement;
@@ -63,7 +63,7 @@ function viz(k,d,p){
       '<div class="tiktok-stats">' +
         '<span class="t-stat"><b>22.5k</b> views</span>' +
         '<span class="t-stat"><b>5k+</b> likes</span>' +
-        '<span class="t-stat live"><i class="dot"></i> Daily</span>' +
+        '<span class="t-stat"><b>890+</b> followers</span>' +
       '</div>' +
     '</div>';
   }
